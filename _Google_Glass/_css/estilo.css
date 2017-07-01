@@ -51,8 +51,23 @@ nav#menu li{
     background-color: #dddddd;
     padding: 10px; /*espaçamento dentro do bloco*/
     margin: 2px;/*margem por fora do bloco*/
+    -webkit-transition: background-color 1s; /*Webkit para navegadores antigos (compatibilidade)*/
+    transition: background-color 1s;
+    cursor: pointer;
+}
+nav#menu li:hover{
+    background-color: #606060;
 }
 
 nav#menu h1{
     display: none; /*esconde-lo mas ele continua servindo como um mecanismo de busca*/
+}
+
+nav#menu a{
+    color: #000000;
+    text-decoration: none; /*tira o underline*/
+}
+nav#menu a:hover{
+    color: #ffffff; /*Muda de cor ao passar o mouse*/
+
 }

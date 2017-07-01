@@ -34,3 +34,25 @@ figure.foto-legenda figcaption{
 figure.foto-legenda:hover figcaption{
 opacity: 1; /*quando passar o mouse por cima do objeto figcaption irá mostrá-lo*/
 }
+
+/*Formatação do Menu*/
+nav#menu {
+    display:  block; /*Definir o nav-menu como bloco para que o menu flutue.*/
+}
+nav#menu ul{
+    list-style-type: none; /*Sem marcadores*/
+    text-transform: uppercase; /*Deixar todas as letras maíusculas*/
+    position: absolute;/*passar por cima dos documentos PELO SITE e não no CONTAINER NAV que no caso seria Relative*/
+    top: -20px;/*tirar a margem padrão o valor deve ser negativo*/
+    left: 300px;
+}
+nav#menu li{
+    display: inline-block; /* itens lado a lado*/
+    background-color: #dddddd;
+    padding: 10px; /*espaçamento dentro do bloco*/
+    margin: 2px;/*margem por fora do bloco*/
+}
+
+nav#menu h1{
+    display: none; /*esconde-lo mas ele continua servindo como um mecanismo de busca*/
+}

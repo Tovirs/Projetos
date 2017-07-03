@@ -1,4 +1,9 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@font-face{
+    font-family: 'FonteLogo';
+    src: url('../_fonts/bubblegum-sans-regular.otf');
+}
 body{
     background-color: #dddddd;
     color: rgba(0,0,0,1);
@@ -26,7 +31,7 @@ header#cabecalho{
     background: url("../_imagens/glass-logo-peq.jpg")no-repeat 0px 80px; /*inclusão do ícone como background, sem repetição e posicionamento de acordo com a altura do cabeçalho */
 }
 header#cabecalho h1{
-    font-family: Arial, sans-serif;
+    font-family: 'FonteLogo', sans-serif;
     font-size: 30pt;
     color: #606060;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .6); /*1 pixel de deslocamento, 1 pixel de deslocamento vertical e 1 px de espalhamento*/
@@ -34,7 +39,7 @@ header#cabecalho h1{
 
 }
 header#cabecalho h2{
-    font-family: Arial, sans-serif;
+    font-family: 'Titillium Web', sans-serif; /*Fonte do google*/
     font-size: 15pt;
     color: #888888;
     padding: 0px;

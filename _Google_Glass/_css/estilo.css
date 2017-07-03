@@ -1,11 +1,44 @@
 @charset "UTF-8";
 body{
-    background-color: white;
+    background-color: #dddddd;
     color: rgba(0,0,0,1);
 }
+div#interface{
+    background-color: #ffffff;
+    width: 900px;   
+    margin: -20px auto 10px auto;
+          /*cima dir  baixo esq*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    padding: 10px;
+}   
 p{
     text-align: justify;
     text-indent: 50px;
+}
+header#cabecalho img#icone{
+    position: absolute;
+    left: 60%;
+    top:70px;    
+}
+header#cabecalho{
+    border-bottom: 1px #606060 solid;
+    height: 150px; /*definir altura do cabeçalho*/
+    background: url("../_imagens/glass-logo-peq.jpg")no-repeat 0px 80px; /*inclusão do ícone como background, sem repetição e posicionamento de acordo com a altura do cabeçalho */
+}
+header#cabecalho h1{
+    font-family: Arial, sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6); /*1 pixel de deslocamento, 1 pixel de deslocamento vertical e 1 px de espalhamento*/
+    margin-bottom: 0px;
+
+}
+header#cabecalho h2{
+    font-family: Arial, sans-serif;
+    font-size: 15pt;
+    color: #888888;
+    padding: 0px;
+    margin-top: 0px;
 }
 /*formatação de imagens com legendas*/
 figure.foto-legenda{
@@ -44,7 +77,7 @@ nav#menu ul{
     text-transform: uppercase; /*Deixar todas as letras maíusculas*/
     position: absolute;/*passar por cima dos documentos PELO SITE e não no CONTAINER NAV que no caso seria Relative*/
     top: -20px;/*tirar a margem padrão o valor deve ser negativo*/
-    left: 300px;
+    left: 700px;
 }
 nav#menu li{
     display: inline-block; /* itens lado a lado*/
